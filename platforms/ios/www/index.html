@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPA Convex 2015</title>
+<!--
+    This template can be used for photo app with grid view that will open detail view, for applications like Photo App or Instagram app.
+-->  
+   <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <!-- jQuery library (served from Google) -->
+	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+ 
+    <!-- phantom library, needed for XDK "legacy" container api calls -->
+    <script src="intelxdk.js"></script>
+    <!-- phantom library, needed for Cordova api calls -->
+    <script src="cordova.js"></script>
+    <!-- phantom library, needed for XDK "legacy" container CORS -->
+    <script src="xhr.js"></script>
+  
+	
+    <script type="text/javascript" charset="utf-8">
+
+             function onLoad()
+             {
+			 	loadgambar1()
+			 	loadgambar2()
+				loadgambar3()
+				loadgambar4()
+				loadgambar5()
+				loadgambar6()
+				loadgambar7()
+				loadgambar8()
+				loadgambar9()
+				loadgambar10()
+				loadgambar11()
+				loadgambar12()
+				loadgambar13()
+				loadgambar14()
+				loadgambar15()
+				loadgambar16()
+				loadgambar17()
+				loadgambar18()
+				loadgambar19()
+				loadgambar20()
+				
+                  document.addEventListener("deviceready", onDeviceReady, true);
+             }
+			
+			function loadgambar1(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+			function loadgambar2(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan2.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan2').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar3(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan3.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan3').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar4(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan4.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan4').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar5(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan5.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan5').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar6(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan6.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan6').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar7(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan7.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan7').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar8(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan8.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan8').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar9(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan9.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan9').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar10(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan10.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan10').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar11(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan11.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan11').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar12(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan12.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan12').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar13(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan13.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan13').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar14(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan14.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan14').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar15(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan15.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan15').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar16(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan16.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan16').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar17(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan17.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan17').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar18(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan18.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan18').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar19(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan19.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan19').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				function loadgambar20(){
+			 $.ajax({
+				type: "get",
+				url: "http://ipaconvex.com/todolist-api/get_iklan20.php",
+				dataType: "json",
+				success: function(data) {
+		
+			var html = '';
+			$.each(data.iklan, function(index, item) {
+			$('#banner_iklan20').attr('src', 'http://ipaconvex.com/pic_banner/' + item.gambar);
+
+						});
+						
+					},
+					error: function() {
+						
+					}
+					});
+				}
+				
+             function callProduct()
+             {
+                window.location = "product.html";
+             }
+			  function callStand()
+             {
+                window.location = "stand.html";
+             }
+			 function callEvents()
+             {
+                window.location = "events.html";
+             }
+			 function callzoom()
+             {
+                window.location = "zoom_map.html";
+             }
+			  function callhotel()
+             {
+                window.location = "hotel.html";
+             }
+			   function callrestoran()
+             {
+                window.location = "restaurant.html";
+             }
+			   function callarea()
+             {
+                window.location = "public_area.html";
+             }
+			   function callnearby()
+             {
+                window.location = "nearby.html";
+             }
+			    function calldownload()
+             {
+	
+                window.location = "downloadable.html";
+             }
+          </script>
+    <script>
+        var onDeviceReady=function(){                             // called when Cordova is ready
+           if( window.Cordova && navigator.splashscreen ) {     // Cordova API detected
+               $.ui.launch(); 
+               navigator.splashscreen.hide() ;                 // hide splash screen
+            }
+        } ;
+        document.addEventListener("deviceready", onDeviceReady, false) ;
+    </script>
+    
+    <script>   
+        $.ui.autoLaunch = false; 
+        $.ui.backButtonText = "Back";
+                
+        $(document).ready(function(){
+            $.ui.launch();
+        });
+    </script>
+   
+    <style>
+	
+/* CSS responsive square grid */        
+.grid-photo {margin:3px -7px;} 
+.grid-photo:after {content:'';display:block;clear:both;}        
+.grid-photo li {position: relative; display:block; float:left; width: 10%; padding-bottom: 10%;}
+.grid-photo .grid-photo-box {position: absolute;left: 3px;right: 3px;top: 3px;bottom: 3px; background-color: rgba(0,0,0,0);} 
+.grid-photo img {width:100%;height:100%}
+@media only screen and (max-width : 1920px) {
+    .grid-photo li {width: 16.6%; padding-bottom: 16.6%;}        
+}        
+@media only screen and (max-width : 1280px) {
+    .grid-photo li {width: 16.6%; padding-bottom: 16.6%;}        
+}
+@media only screen and (max-width : 1024px) {
+    .grid-photo li {width: 16.6%; padding-bottom: 16.6%;}        
+}              
+@media only screen and (max-width : 768px) {
+    .grid-photo li {width: 16.6%; padding-bottom: 16.6%;}        
+}        
+@media only screen and (max-width : 480px) {
+    .grid-photo li {width: 33.3%; padding-bottom: 33.3%;}        
+}
+@media only screen and (max-width : 320px) {
+    .grid-photo li {width: 33.3%; padding-bottom: 33.3%;}        
+}   
+    </style>    
+</head>
+<body onLoad="onLoad();">
+
+<div id="afui" class="android">
+    <div id="content" style="">
+        
+    <!--Grid View Page-->
+        <div class="panel" title="Back" id="gridview" selected="true">
+            <header class="header">
+                <h1>IPA Convex 2015</h1>
+                <a href="#" class="button icon refresh" style="float:right"></a>            </header>
+           <!-- Start WOWSlider.com BODY section -->
+	<div id="wowslider-container">
+	<div class="ws_images"><ul>
+	<li><img id="banner_iklan"/></li>
+	<li><img id="banner_iklan2"/></li>
+	<li><img id="banner_iklan3"/></li>
+	<li><img id="banner_iklan4"/></li>
+    <li><img id="banner_iklan5"/></li>
+    <li><img id="banner_iklan6"/></li>
+    <li><img id="banner_iklan7"/></li>
+    <li><img id="banner_iklan8"/></li>
+    <li><img id="banner_iklan9"/></li>
+    <li><img id="banner_iklan10"/></li>
+    <li><img id="banner_iklan11"/></li>
+    <li><img id="banner_iklan12"/></li>
+    <li><img id="banner_iklan13"/></li>
+    <li><img id="banner_iklan14"/></li>
+    <li><img id="banner_iklan15"/></li>
+    <li><img id="banner_iklan16"/></li>
+    <li><img id="banner_iklan17"/></li>
+    <li><img id="banner_iklan18"/></li>
+    <li><img id="banner_iklan19"/></li>
+    <li><img id="banner_iklan20"/></li>
+	</ul></div>
+		<a href="#" class="ws_frame"></a>
+		<div class="ws_shadow"></div>
+	</div>
+            <center><img src="logo.png" width="100" height="174"/></center>
+			</br>
+            <div class="grid-photo">
+                <li><div class="grid-photo-box"><a href="#item1"><img src="img/exhibitor.png" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item2"><img src="img/nearby.png" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item3"><img src="img/schedule.png" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item4"><img src="img/publicity.png" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item5"><img src="img/activity.png" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item6"><img src="img/event.png" /></a></div></li>
+            </div>
+        </div>
+        
+    <!--Detail View Pages for each grid items-->
+        <div class="panel" title="Exhibitor" id="item1">
+       	 <center><img src="img/cap_exhibitor.png" width="50%" height="50%"/></center>
+            <div data-role="content">	
+                    <ul class="list inset" style="">
+                        <li><a href="#" onClick="callProduct()"><b>Product & Core Business</b></a></li>
+	<li><a href="#" onClick="callStand()"><b>Stand Location</b></a></li>       
+                     <li onclick='$("#details").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Contact</b></li>
+<li id='details' style='display:none'>(+6221) 3199-7174 / (+6221) 3199-7175 </br> </br>(+6221) 3199-7176 </br></br> conventionipa2015@dyandra.com</li>
+                    </ul>
+</div>
+        </div>
+        
+        <div class="panel" title="Nearby" id="item2">
+            <center><img src="img/cap_nearby.png" width="50%" height="50%"/></center>
+            <div data-role="content">	
+ <ul class="list inset" style="">
+                          
+ <li><a href="#" onClick="callnearby()"><b>Nearby</b></a></li>
+</li>
+                    </ul>
+</div>
+        </div>
+        
+        <div class="panel" title="Schedule" id="item3">
+            <center><img src="img/cap_jadwal.png" width="50%" height="50%"/></center>
+            <div data-role="content">	
+<ul class="list inset" style="">
+	<li><a href="#" onClick="callEvents()">Daily Event Activity</a></li>
+</ul>
+</div>
+        </div>
+        
+        <div class="panel" title="Publicity" id="item4">
+             <center><img src="img/cap_public.png" width="50%" height="50%"/></center>
+            <div data-role="content">	
+            <ul class="list inset" style="">
+                          
+                <li><a href="#" onClick="calldownload()"><b>Downloadable Content</b></a></li>
+        
+         <li onclick='$("#details5").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Media Partner</b></li>
+<li id='details5' style='display:none'>
+
+<ul class="list inset" style="">
+                          
+                     <li onclick='$("#details6").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Up Stream</b></li>
+<li id='details6' style='display:none'><center><img src="img/upstream.jpg"/></center></li>
+
+ <li onclick='$("#details7").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Petro Energy</b></li>
+<li id='details7' style='display:none'><center><img src="img/petro_energy.jpg"/></center></li>
+
+ <li onclick='$("#details8").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Petrominer</b></li>
+<li id='details8' style='display:none'><center><img src="img/petrominer.jpg"/></center></li>
+
+ <li onclick='$("#details9").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Tambang Magazine</b></li>
+<li id='details9' style='display:none'><center><img src="img/tambang_magazine.jpg"/></center></li>
+
+ <li onclick='$("#details10").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Energy Nusantara</b></li>
+<li id='details10' style='display:none'><center><img src="img/energy_nusantara.jpg"/></center></li>
+
+ <li onclick='$("#details11").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Maps & Global Specialist</b></li>
+<li id='details11' style='display:none'><center><img src="img/maps_globe.jpg"/></center></li>
+
+ <li onclick='$("#details12").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Migas Review</b></li>
+<li id='details12' style='display:none'><center><img src="img/migas_review.jpg"/></center></li>
+
+ <li onclick='$("#details13").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>The Jakarta Post</b></li>
+<li id='details13' style='display:none'><center><img src="img/jakarta_post.jpg"/></center></li>
+
+ <li onclick='$("#details14").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Bisnis Indonesia</b></li>
+<li id='details14' style='display:none'><center><img src="img/bisnis_indonesia.jpg"/></center></li>
+
+ <li onclick='$("#details15").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Bloomberg Business Week</b></li>
+<li id='details15' style='display:none'><center><img src="img/blumberk.jpg"/></center></li>
+
+ <li onclick='$("#details16").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Oil & Gas Today</b></li>
+<li id='details16' style='display:none'><center><img src="img/oil_gas.jpg"/></center></li>
+
+ <li onclick='$("#details17").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Euro Asia Industry Magz</b></li>
+<li id='details17' style='display:none'><center><img src="img/euro_asia.jpg"/></center></li>
+
+ <li onclick='$("#details18").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Majalah Tempo</b></li>
+<li id='details18' style='display:none'><center><img src="img/tempo.jpg"/></center></li>
+
+ <li onclick='$("#details19").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>SWA</b></li>
+<li id='details19' style='display:none'><center><img src="img/swa.jpg"/></center></li>
+
+ <li onclick='$("#details20").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>National Geographic Indonesia</b></li>
+<li id='details20' style='display:none'><center><img src="img/national.jpg"/></center></li>
+
+ <li onclick='$("#details21").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Detik</b></li>
+<li id='details21' style='display:none'><center><img src="img/detik.jpg"/></center></li>
+
+ <li onclick='$("#details22").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Oxford Business Group</b></li>
+<li id='details22' style='display:none'><center><img src="img/oxford.jpg"/></center></li>
+
+ <li onclick='$("#details23").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Kompas TV</b></li>
+<li id='details23' style='display:none'><center><img src="img/kompas.jpg"/></center></li>
+
+ <li onclick='$("#details24").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Koran Tempo</b></li>
+<li id='details24' style='display:none'><center><img src="img/tempo.jpg"/></center></li>
+
+ <li onclick='$("#details25").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Media Indonesia</b></li>
+<li id='details25' style='display:none'><center><img src="img/mi.jpg"/></center></li>
+
+ <li onclick='$("#details26").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Republika</b></li>
+<li id='details26' style='display:none'><center><img src="img/repu.jpg"/></center></li>
+
+ <li onclick='$("#details27").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Berita Satu Media Holding</b></li>
+<li id='details27' style='display:none'><center><img src="img/bs.jpg"/></center></li>
+
+ <li onclick='$("#details28").toggle(); if($(this).hasClass("icon remove"))$(this).replaceClass("icon remove","icon add");else $(this).replaceClass("icon add","icon remove");''><b>Metro TV</b></li>
+<li id='details28' style='display:none'><center><img src="img/metro.jpg"/></center></li>
+</ul>
+</li>
+         </ul>
+</div>
+        </div>
+        
+        <div class="panel" title="Recent Activity" id="item5">
+            <center><img src="img/cap_activity.png" width="50%" height="50%"/></center>
+            <div data-role="content" data-content-theme="a">	
+<ul class="list inset" style="">
+	<li><a href="#" onClick="callEvents()">List Recent Activity</a></li>
+</ul>
+</div>
+        </div>
+        
+        <div class="panel" title="About Event" id="item6">
+            <center><img src="img/cap_event.png" width="50%" height="50%"/></center>
+            <div data-role="content">	
+<div data-role="collapsible" >
+    <h3>Detail Info About Event</h3>
+    <p align="justify">
+
+&nbsp;&nbsp;&nbsp;&nbsp;The IPA Convention and Exhibition is one of the ways IPA goes about delivering its mission and it is Indonesia's premier event for the oil and gas industry. The IPA Convention and Exhibition aims to promote and attract investments into Indonesia. It showcases the latest technology and innovations, and supports the Indonesian government to identify and address major technical and non-technical challenges within the country's oil and gas industry.
+</br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;The convention brings together the industry's key players, providing a forum to address the challenges they face and to work together to come up with the best possible solutions.
+</br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;For the last 30 years, the Convention has drawn oil and gas leaders from around the world, attracting more than 2,000 participants and over 100 exhibitors yearly, as well as demonstrating its commitment to share new skills through presentations of over 100 technical papers per edition. To date, the IPA has published more than 2,500 technical articles and 90 books that represent a major source of information on the oil and gas industry.</p>
+</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>    

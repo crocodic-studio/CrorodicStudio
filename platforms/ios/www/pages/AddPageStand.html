@@ -1,0 +1,31 @@
+<script>
+    $.getScript(path + "js/AddPageStand.js");
+</script>
+  
+<header class="bar bar-nav">
+<button id="back" class="btn pull-left"  onclick="currentPage.back();">Back</button>
+   
+    <h1 class="title">AddPage</h1>
+</header>
+
+<div class="content">
+    <div class="card">
+    <ul class="table-view">
+        <li class="table-view-cell table-view-divider">Booth No :</li>
+  
+        <li class="table-view-cell"><input id="lobby" name="lobby" type="text"></li>
+  
+        <li class="table-view-cell table-view-divider">Company :</li>
+  
+        <li class="table-view-cell"><input id="perusahaan" name="perusahaan" type="text"></li>
+        
+        <li class="table-view-cell table-view-divider">Description :</li>
+  
+        <li class="table-view-cell"><input id="keterangan" name="keterangan" type="text"></li>
+  
+    </ul>
+   </div>
+    <div class="card" style="margin-bottom:40px;">
+        <button class="btn btn-positive btn-block" onclick="currentPage.add();">ADD TASK</button>
+    </div>
+</div>

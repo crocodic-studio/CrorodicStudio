@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+    
+    <script src="intelxdk.js"></script>
+    <script src='cordova.js'></script>    
+    <script src="xhr.js"></script>
+    <script type="text/javascript">
+        var onDeviceReady=function(){                             // called when Cordova is ready
+            window.open = cordova.InAppBrowser.open;
+	
+        };
+        document.addEventListener("deviceready", onDeviceReady, false) ;
+		
+		 var iabRef = null;
+
+    function iabLoadStart(event) {
+        alert(event.type + ' - ' + event.url);
+    }
+
+    function iabLoadStop(event) {
+        alert(event.type + ' - ' + event.url);
+    }
+
+    function iabClose(event) {
+         alert(event.type);
+         iabRef.removeEventListener('loadstart', iabLoadStart);
+         iabRef.removeEventListener('loadstop', iabLoadStop);
+         iabRef.removeEventListener('exit', iabClose);
+    }
+
+    </script>
+    
+    <style>
+    /* css for custom list item, modify as needed */
+    #afui #listview .list li {padding:10px 20px 10px 10px}
+    .list-image {float:left;width:50px;height:50px}
+    .list-text {margin-left:60px;min-height:50px}
+    </style>   
+    
+</head>
+    
+<body>
+    
+    <script>
+        function kembali()
+         {
+            window.location = "index.html";
+         } 
+		  function download1()
+         {
+		 	myURL = encodeURI('http://ipaconvex.com/floorplan.html');
+			window.open(myURL, '_blank', 'location=yes'); 
+         } 
+		   function download2()
+         {
+			 myURL2 = encodeURI('http://ipaconvex.com/price_list.html');
+			window.open(myURL2, '_blank', 'location=yes'); 
+         
+         } 
+		   function download3()
+         {
+			  myURL3 = encodeURI('http://ipaconvex.com/form.html');
+			window.open(myURL3, '_blank', 'location=yes'); 
+        
+         } 
+		   function download4()
+         {
+		 
+		 	  myURL4 = encodeURI('http://ipaconvex.com/ebook.html');
+			window.open(myURL4, '_blank', 'location=yes'); 
+
+         } 
+		   function download5()
+         {
+		 
+		   myURL5 = encodeURI('http://ipaconvex.com/form2.html');
+			window.open(myURL5, '_blank', 'location=yes'); 
+
+         } 
+		   function download6()
+         {
+		    myURL6 = encodeURI('http://ipaconvex.com/zwp.html');
+			window.open(myURL6, '_blank', 'location=yes'); 
+
+         } 
+		   function download7()
+         {
+			 myURL7 = encodeURI('http://ipaconvex.com/proposal.html');
+			window.open(myURL7, '_blank', 'location=yes'); 
+         } 
+    </script>  
+    
+    <div id="afui" class="android">
+        <div id="content">
+
+            <!--List View Page-->
+            <div class="panel" id="listview" data-footer="none">
+                <header>
+                   	<button class="list-image"  onclick="kembali();">Back</button>
+                    <h1>Download Content</h1>
+                </header>
+                <ul class="list" style="color: white;">
+                    <li><a href="#" onClick="download1()"/><img class="list-image" src="img/fp.png"/><div class="list-text">                     <b>Floorplan</b></div></a></li>
+                    <li><a href="#" onClick="download2()"><img class="list-image" src="img/pl.png"/><div class="list-text">                     <b>Price List</b></div></a></li>  
+                    <li><a href="#" onClick="download3()"><img class="list-image" src="img/fa.png"/><div class="list-text">                     <b>Application & Contract Form</b></div></a></li>   
+                    <li><a href="#" onClick="download4()"><img class="list-image" src="img/eb.png"/><div class="list-text">                     <b>E-Book Sponsorship</b></div></a></li>   
+                    <li><a href="#" onClick="download5()"><img class="list-image" src="img/fs.png"/><div class="list-text">                     <b>Form Sponsorship</b></div></a></li>   
+                    <li><a href="#" onClick="download6()"><img class="list-image" src="img/zw.png"/><div class="list-text">                     <b>Zero Waste Program</b></div></a></li>  
+                    <li><a href="#" onClick="download7()"><img class="list-image" src="img/5k.png"/><div class="list-text">                     <b>5K 10K Run Accelerate Solution</b></div></a></li>             
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

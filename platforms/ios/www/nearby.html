@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Place searches</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+	  background: #000000;
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+		
+      }
+	  
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+    <script>
+	
+
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}
+
+var map;
+var infowindow;
+
+function initialize() {
+  var pyrmont = new google.maps.LatLng(-6.214444, 106.807500);
+
+  map = new google.maps.Map(document.getElementById('map-canvas'), {
+    center: pyrmont,
+    zoom: 15
+  });
+var marker = new google.maps.Marker({
+      position: pyrmont,
+      map: map,
+  });
+  var request = {
+    location: pyrmont,
+    radius: 500,
+    types: ['store','restaurant','hotel']
+  };
+  infowindow = new google.maps.InfoWindow();
+  var service = new google.maps.places.PlacesService(map);
+  service.nearbySearch(request, callback);
+}
+
+function callback(results, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      createMarker(results[i]);
+    }
+  }
+}
+
+function createMarker(place) {
+  var placeLoc = place.geometry.location;
+  var image = 'location_img.png';
+  var marker = new google.maps.Marker({
+      position: place.geometry.location,
+      map: map,
+      icon: image
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.setContent(place.name);
+    infowindow.open(map, this);
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+    <script>
+function goBack() {
+      window.location = "index.html";
+}
+</script>
+  </head>
+  <body>
+ <center> Nearby</center>
+  <button onclick="goBack()">Go Back</button>
+
+
+    <div id="map-canvas"></div>
+  </body>
+</html>
+
+
+

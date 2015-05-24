@@ -1,0 +1,35 @@
+<script>
+    $.getScript(path + "js/AddPageEvents.js");
+</script>
+  
+<header class="bar bar-nav">
+<button id="back" class="btn pull-left"  onclick="currentPage.back();">Back</button>
+   
+    <h1 class="title">AddPage</h1>
+</header>
+
+<div class="content">
+    <div class="card">
+    <ul class="table-view">
+        <li class="table-view-cell table-view-divider">Title :</li>
+  
+        <li class="table-view-cell"><input id="title" name="title" type="text"></li>
+  
+        <li class="table-view-cell table-view-divider">Instructor :</li>
+  
+        <li class="table-view-cell"><input id="instructor" name="instructor" type="text"></li>
+        
+        <li class="table-view-cell table-view-divider">Description :</li>
+  
+        <li class="table-view-cell"><input id="description" name="description" type="text"></li>
+        
+        <li class="table-view-cell table-view-divider">Dates :</li>
+  
+        <li class="table-view-cell"><input id="tanggal" name="tanggal" type="text"></li>
+  
+    </ul>
+   </div>
+    <div class="card" style="margin-bottom:40px;">
+        <button class="btn btn-positive btn-block" onclick="currentPage.add();">ADD TASK</button>
+    </div>
+</div>

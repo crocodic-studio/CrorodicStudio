@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Restaurant</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+<link rel="stylesheet" href="css/styles.css" />
+<script>
+  
+	function kembali()
+             {
+                window.location = "index.html";
+             }
+</script>
+
+</head>
+    
+<body>
+        
+<div id="employeeListPage" data-role="page" >
+
+	<div data-role="header" data-position="fixed">
+		<h1>Restaurant</h1>
+        <a href="#" data-icon="back" onClick="kembali()">Back</a>
+	</div>
+
+	<div data-role="content">
+         <ul id="employeeList" data-role="listview" data-filter="true"></ul>
+    </div>		
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<script src="js/restaurant.js"></script>
+<script src="js/employeedetails.js"></script>
+<script src="js/reportlist.js"></script>
+
+</body>
+
+</html>

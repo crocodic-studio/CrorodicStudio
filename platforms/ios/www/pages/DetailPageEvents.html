@@ -1,0 +1,33 @@
+<script>
+    $.getScript(path + "js/DetailPageEvents.js");
+</script>
+  
+<header class="bar bar-nav">
+	<button id="back" class="btn pull-left"  onclick="currentPage.back();">Back</button>
+  
+    <h1 class="title">Detail Schedule Events</h1>
+</header>
+  
+<div class="content">
+    <div class="card">
+    <ul class="table-view">
+        <li class="table-view-cell table-view-divider">Title :</li>
+  
+        <li class="table-view-cell"><textarea disabled id="title" name="title" rows="5"></textarea></li>
+  
+        <li class="table-view-cell table-view-divider">Instructor :</li>
+  
+        <li class="table-view-cell"><textarea disabled id="instructor" name="instructor" rows="2"></textarea></li>
+        
+        <li class="table-view-cell table-view-divider">Description :</li>
+  
+        <li class="table-view-cell"><textarea disabled id="description" name="description" rows="2"></textarea></li>
+        
+        <li class="table-view-cell table-view-divider">Dates :</li>
+  
+        <li class="table-view-cell"><textarea disabled id="tanggal" name="tanggal"></textarea></li>
+  
+    </ul>
+   </div>
+  
+</div>

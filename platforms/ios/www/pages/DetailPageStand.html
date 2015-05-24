@@ -1,0 +1,28 @@
+<script>
+    $.getScript(path + "js/DetailPageStand.js");
+</script>
+  
+<header class="bar bar-nav">
+	<button id="back" class="btn pull-left"  onclick="currentPage.back();">Back</button>
+  
+    <h1 class="title">Detail Stand Location</h1>
+</header>
+  
+<div class="content">
+    <div class="card">
+    <ul class="table-view">
+        <li class="table-view-cell table-view-divider">Booth No :</li>
+  
+        <li class="table-view-cell"><textarea disabled id="lobby" name="lobby" ></textarea></li>
+  
+        <li class="table-view-cell table-view-divider">Company :</li>
+  
+        <li class="table-view-cell"><textarea disabled id="perusahaan" name="perusahaan"></textarea></li>
+        
+        <li class="table-view-cell table-view-divider">Description :</li>
+  
+        <li class="table-view-cell"><textarea disabled id="keterangan" name="keterangan" rows="7"></textarea></li>
+  
+    </ul>
+   </div>
+</div>
